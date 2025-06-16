@@ -8,7 +8,7 @@ const firebaseConfig = {
   projectId:import.meta.env.VITE_AUTH_PROJECT,
   storageBucket:import.meta.env.VITE_AUTH_STORAGEBUCKET,
   messagingSenderId:import.meta.env.VITE_AUTH_MESSAGINGSENDER,
-  appId:import.meta.env.VITE_AUTH_APP
+  appId:import.meta.env.VITE_AUTH_APP,
 };
 
 // Initialize Firebase
