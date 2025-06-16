@@ -12,18 +12,18 @@ const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <AuthProvider> */}
-      {/* <QueryClientProvider client={queryClient}> */}
+    <AuthProvider>
+      <QueryClientProvider client={queryClient}>
         <HelmetProvider>
           <RouterProvider router={Router} />
           <ToastContainer
             position="top-center"
-            autoClose={2000}
+            autoClose={1500}
             theme="colored"
             transition={Bounce}
           />
         </HelmetProvider>
-      {/* </QueryClientProvider> */}
-    {/* </AuthProvider> */}
+      </QueryClientProvider> 
+     </AuthProvider>
   </React.StrictMode>
 );
